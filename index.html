@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/js/main.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-black">
+    <div id="mainContent" class="flex justify-center">
+        <div class="w-full max-w-sm min-h-screen bg-white flex flex-col">
+            <div class="p-4 flex-grow">
+                <!-- Start Layout Konten -->
+                    <!-- Header with Icon and Text -->
+                    <div class="absolute top-0 left-0 w-full py-3 px-10 bg-blue-600 flex items-center">
+                        <!-- <a href="">
+                            <i class="fa fa-chevron-left text-white"></i>
+                        </a> -->
+                        <div class="sticky top-0 flex-grow flex justify-center items-center">
+                            <p class="font-bold text-white">Mobile Template</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 text-center pt-10">
+                        <p class="font-bold text-xl text-blue-600"> Components</p>
+                    </div>
+
+                    <!-- Grid Tombol Menu -->
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <a href="components/accordion.html" class="text-center bg-blue-600 text-white p-4 rounded">Accordion</a>
+                        <a href="components/alert.html" class="text-center bg-blue-600 text-white p-4 rounded">Alert</a>
+                        <a href="components/avatar.html" class="text-center bg-blue-600 text-white p-4 rounded">Avatar</a>
+                        <a href="components/badge.html" class="text-center bg-blue-600 text-white p-4 rounded">Badge</a>
+                        <a href="components/breadcrumbs.html" class="text-center bg-blue-600 text-white p-4 rounded">Breadcrumbs</a>
+                        <a href="components/button.html" class="text-center bg-blue-600 text-white p-4 rounded">Button</a>
+                        <a href="components/calendar.html" class="text-center bg-blue-600 text-white p-4 rounded">Calendar</a>
+                        <a href="components/card.html" class="text-center bg-blue-600 text-white p-4 rounded">Card</a>
+                        <a href="components/carousel.html" class="text-center bg-blue-600 text-white p-4 rounded">Carousel</a>
+                        <a href="components/charts.html" class="text-center bg-blue-600 text-white p-4 rounded">Charts</a>
+                        <a href="components/chip.html" class="text-center bg-blue-600 text-white p-4 rounded">Chip</a>
+                        <a href="components/collapse.html" class="text-center bg-blue-600 text-white p-4 rounded">Collapse</a>
+                        <a href="components/dropdown.html" class="text-center bg-blue-600 text-white p-4 rounded">Dropdown</a>
+                        <a href="components/footer.html" class="text-center bg-blue-600 text-white p-4 rounded">Footer</a>
+                        <a href="components/form.html" class="text-center bg-blue-600 text-white p-4 rounded">Form</a>
+                        <a href="components/gallery.html" class="text-center bg-blue-600 text-white p-4 rounded">Gallery</a>
+                        <a href="components/hero-section.html" class="text-center bg-blue-600 text-white p-4 rounded">Hero Section</a>
+                        <a href="components/list.html" class="text-center bg-blue-600 text-white p-4 rounded">List</a>
+                        <a href="components/loader.html" class="text-center bg-blue-600 text-white p-4 rounded">Loader</a>
+                        <a href="components/menu.html" class="text-center bg-blue-600 text-white p-4 rounded">Menu</a>
+                        <a href="components/modal.html" class="text-center bg-blue-600 text-white p-4 rounded">Modal</a>
+                        <a href="components/navbar.html" class="text-center bg-blue-600 text-white p-4 rounded">Navbar</a>
+                        <a href="components/pagination.html" class="text-center bg-blue-600 text-white p-4 rounded">Pagination</a>
+                        <a href="components/popover.html" class="text-center bg-blue-600 text-white p-4 rounded">Popover</a>
+                        <a href="components/progress-bar.html" class="text-center bg-blue-600 text-white p-4 rounded">Progress Bar</a>
+                        <a href="components/rating.html" class="text-center bg-blue-600 text-white p-4 rounded">Rating</a>
+                        <a href="components/sidebar.html" class="text-center bg-blue-600 text-white p-4 rounded">Sidebar</a>
+                        <a href="components/slider.html" class="text-center bg-blue-600 text-white p-4 rounded">Slider</a>
+                        <a href="components/stepper.html" class="text-center bg-blue-600 text-white p-4 rounded">Stepper</a>
+                        <a href="components/table.html" class="text-center bg-blue-600 text-white p-4 rounded">Table</a>
+                        <a href="components/tabs.html" class="text-center bg-blue-600 text-white p-4 rounded">Tabs</a>
+                        <a href="components/timeline.html" class="text-center bg-blue-600 text-white p-4 rounded">Timeline</a>
+                        <a href="components/toast.html" class="text-center bg-blue-600 text-white p-4 rounded">Toast</a>
+                        <a href="components/tooltip.html" class="text-center bg-blue-600 text-white p-4 rounded">Tooltip</a>
+                        <a href="components/video.html" class="text-center bg-blue-600 text-white p-4 rounded">Video</a>
+                    </div>
+
+                    <div class="mb-6 text-center">
+                        <p class="font-bold text-xl text-blue-600"> Template</p>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+                        <h2 class="text-xl font-bold mb-2">Card 1</h2>
+                        <p class="text-gray-700">Ini adalah konten dari card pertama.</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6 text-white">
+                        <h2 class="text-xl font-bold mb-2">Card 2</h2>
+                        <p>Ini adalah konten dari card kedua.</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Button 2</button>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-green-400 shadow-lg rounded-lg p-6 mb-6">
+                        <h2 class="text-xl font-bold mb-2">Card 3</h2>
+                        <p class="text-gray-700">Ini adalah konten dari card ketiga.</p>
+                        <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded">Button 3</button>
+                    </div>
+
+                    <div class="mb-6 text-center">
+                        <p class="font-bold text-xl text-blue-600"> Sistem</p>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+                        <h2 class="text-xl font-bold mb-2">Card 1</h2>
+                        <p class="text-gray-700">Ini adalah konten dari card pertama.</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-gray-800 shadow-lg rounded-lg p-6 mb-6 text-white">
+                        <h2 class="text-xl font-bold mb-2">Card 2</h2>
+                        <p>Ini adalah konten dari card kedua.</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Button 2</button>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-green-400 shadow-lg rounded-lg p-6 mb-6">
+                        <h2 class="text-xl font-bold mb-2">Card 3</h2>
+                        <p class="text-gray-700">Ini adalah konten dari card ketiga.</p>
+                        <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded">Button 3</button>
+                    </div>
+
+                    <div class="mb-6 text-center">
+                        <p class="font-bold text-xl text-blue-600"> Pilihan Paket</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <!-- Pricing Card -->
+                        <div class="bg-white shadow-lg rounded-lg p-6 mb-6 overflow-auto">
+                            <h2 class="text-2xl font-bold mb-4 text-center">Paket Jadi</h2>
+                            <p class="text-center font-semibold text-gray-700">Mulai</p>
+                            <div class="text-center mb-4">
+                                <span class="text-4xl font-extrabold"> Rp. 1Jt</span>
+                            </div>
+                            <ul class="mb-4 text-gray-700">
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Pilihan Sistem Investasi Sudah Tersedia</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Tampilan Menggunakan Template Yang Sudah Ada</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Free Hosting</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Free Domain</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Free Perbaikan Bug</li>
+                            </ul>
+                            <button class="w-full bg-blue-500 text-white px-4 py-2 rounded"><i clas></i> Pesan</button>
+                        </div>
+                        <!-- Pricing Card -->
+                        <div class="bg-white shadow-lg rounded-lg p-6 mb-6 overflow-auto">
+                            <h2 class="text-2xl font-bold mb-4 text-center">Paket Custom</h2>
+                            <p class="text-center font-semibold text-gray-700">Mulai</p>
+                            <div class="text-center mb-4">
+                                <span class="text-4xl font-extrabold"> Rp. 1.5Jt</span>
+                            </div>
+                            <ul class="mb-4 text-gray-700">
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Custom Sistem Investasi</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Custom Tampilan Website</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Free Hosting</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Free Domain</li>
+                                <li class="mb-2"><i class="fa fa-check-circle text-green-500 mr-2"></i>Free Perbaikan Bug</li>
+                            </ul>
+                            <button class="w-full bg-blue-500 text-white px-4 py-2 rounded"><i clas></i> Pesan</button>
+                        </div>
+                    </div>s
+                <!-- End Layout Konten -->
+            </div>
+            <div class="sticky bottom-0 bg-gray-800 text-white">
+                <div class="flex justify-between p-4">
+                    <a href="#" class="hover:text-gray-400">Menu 1</a>
+                    <a href="#" class="hover:text-gray-400">Menu 2</a>
+                    <a href="#" class="hover:text-gray-400">Menu 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
