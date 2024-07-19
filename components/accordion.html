@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/js/main.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-black">
+    <div id="mainContent" class="flex justify-center">
+        <div class="w-full max-w-sm min-h-screen bg-white flex flex-col">
+            <!-- Header with Icon and Text -->
+            <div class="sticky top-0 left-0 w-full py-3 px-10 bg-blue-600 flex items-center">
+                <a href="../index.html">
+                    <i class="fa fa-chevron-left text-white"></i>
+                </a>
+                <div class="flex-grow flex justify-center items-center">
+                    <p class="font-bold text-white">Mobile Template</p>
+                </div>
+            </div>
+            <div class="p-4 flex-grow">
+                <!-- Start Layout Konten -->
+                <div class="mb-6 text-center pt-5">
+                    <p class="font-bold text-xl text-blue-600">Accordion</p>
+                    <small><i>Diperbarui Pada 19-07-2024 23:36</i></small>
+                </div>
+                <!-- Accordion Component -->
+                <div id="accordionContainer">
+                    <!-- Accordion 1 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-2 px-4 bg-gray-300 hover:bg-gray-400 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 1</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4">
+                                <p>Content for accordion 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 2 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-blue-300 hover:bg-blue-400 transition-colors duration-300 flex justify-between items-center shadow-lg">
+                            <span class="font-bold">Accordion 2</span>
+                            <i class="fas fa-plus accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-blue-100 shadow-inner">
+                            <div class="p-4">
+                                <p>Content for accordion 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 3 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-2 px-4 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold text-white">Accordion 3</span>
+                            <i class="fas fa-angle-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-green-100">
+                                <p>Content for accordion 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 4 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gray-200 hover:bg-gray-300 transition-colors duration-300 flex justify-between items-center border border-gray-400 rounded-lg">
+                            <span class="font-bold">Accordion 4</span>
+                            <i class="fas fa-arrow-circle-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-100 rounded-lg border-t border-gray-400">
+                                <p>Content for accordion 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 5 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-2 px-4 bg-white hover:bg-gray-100 transition-colors duration-300 flex justify-between items-center shadow-md">
+                            <span class="font-bold underline">Accordion 5</span>
+                            <i class="fas fa-caret-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-white shadow-inner">
+                                <p>Content for accordion 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 6 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border border-blue-500 hover:bg-blue-100 transition-colors duration-300 flex justify-between items-center font-serif">
+                            <span class="font-bold text-blue-500">Accordion 6</span>
+                            <i class="fas fa-arrow-down accordion-icon text-blue-500"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-blue-50 border-t border-blue-500">
+                                <p>Content for accordion 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 7 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gray-800 text-white hover:bg-gray-700 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 7</span>
+                            <i class="fas fa-caret-right accordion-icon transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-700 text-white">
+                                <p>Content for accordion 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 8 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-transparent border-b border-gray-400 hover:bg-gray-100 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 8</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-50">
+                                <p>Content for accordion 8. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 9 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-yellow-200 hover:bg-yellow-300 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 9</span>
+                            <i class="fas fa-plus accordion-icon transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-yellow-100">
+                                <p>Content for accordion 9. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 10 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border-l-4 border-red-500 hover:bg-red-100 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 10</span>
+                            <i class="fas fa-chevron-right accordion-icon transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-red-50">
+                                <p>Content for accordion 10. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 11 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gray-100 border-b-2 border-gray-300 hover:bg-gray-200 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 11</span>
+                            <i class="fas fa-plus accordion-icon transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-50">
+                                <p>Content for accordion 11. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 12 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gradient-to-b from-purple-400 to-pink-500 hover:from-pink-500 hover:to-purple-400 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold text-white">Accordion 12</span>
+                            <i class="fas fa-caret-down accordion-icon text-white mx-auto"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-pink-50">
+                                <p>Content for accordion 12. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 13 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border-2 border-dashed border-gray-400 hover:bg-gray-100 transition-colors duration-300 flex justify-between items-center shadow">
+                            <span class="font-bold">Accordion 13</span>
+                            <i class="fas fa-angle-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-50">
+                                <p>Content for accordion 13. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 14 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-transparent border-b border-gray-400 hover:bg-gray-100 transition-colors duration-300 flex items-center">
+                            <i class="fas fa-chevron-right accordion-icon mr-3"></i>
+                            <span class="font-bold">Accordion 14</span>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-50">
+                                <p>Content for accordion 14. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 15 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gradient-to-r from-green-400 to-teal-500 hover:from-teal-500 hover:to-green-400 transition-colors duration-300 flex justify-between items-center rounded-lg">
+                            <span class="font-bold text-white">Accordion 15</span>
+                            <i class="fas fa-angle-double-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-green-50 rounded-lg">
+                                <p>Content for accordion 15. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 16 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border border-gray-300 hover:bg-gray-100 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 16</span>
+                            <i class="fas fa-circle accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-50 border border-gray-300">
+                                <p>Content for accordion 16. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 17 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-pattern hover:bg-pattern-hover transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 17</span>
+                            <i class="fas fa-plus accordion-icon transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-100">
+                                <p>Content for accordion 17. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 18 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border border-transparent hover:border-green-500 transition-colors duration-300 flex justify-center items-center">
+                            <i class="fas fa-angle-down accordion-icon mx-2"></i>
+                            <span class="font-bold mx-2">Accordion 18</span>
+                            <i class="fas fa-angle-down accordion-icon mx-2"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-green-50">
+                                <p>Content for accordion 18. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 19 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-transparent border border-dashed border-gray-500 hover:bg-gray-100 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 19</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-50">
+                                <p>Content for accordion 19. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 20 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 hover:from-indigo-400 hover:to-pink-300 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold text-white">Accordion 20</span>
+                            <i class="fas fa-plus accordion-icon text-white"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-purple-50">
+                                <p>Content for accordion 20. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 21 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border-t-4 border-b-4 border-double border-red-400 hover:bg-red-100 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 21</span>
+                            <i class="fas fa-caret-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-red-50">
+                                <p>Content for accordion 21. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 22 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-blue-500 hover:bg-blue-700 transition-colors duration-300 flex justify-center items-center rounded-lg">
+                            <i class="fas fa-chevron-circle-down accordion-icon text-white mx-2"></i>
+                            <span class="font-bold text-white mx-2">Accordion 22</span>
+                            <i class="fas fa-chevron-circle-down accordion-icon text-white mx-2"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-blue-100 rounded-lg">
+                                <p>Content for accordion 22. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 23 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gray-200 hover:bg-gray-300 transition-colors duration-300 flex justify-between items-center shadow-lg">
+                            <span class="font-bold">Accordion 23</span>
+                            <i class="fas fa-angle-right accordion-icon transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-100">
+                                <p>Content for accordion 23. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 24 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-cover bg-center bg-no-repeat" style="background-image: url('https://via.placeholder.com/600x200');" hover:bg-opacity-75 transition-all duration-300 flex justify-between items-center text-white">
+                            <span class="font-bold mx-auto">Accordion 24</span>
+                            <i class="fas fa-caret-down accordion-icon mx-2"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-800 text-white">
+                                <p>Content for accordion 24. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 25 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border-b-4 border-solid border-indigo-600 hover:bg-indigo-100 transition-all duration-300 flex justify-center items-center">
+                            <i class="fas fa-arrow-down accordion-icon mx-2"></i>
+                            <span class="font-bold text-indigo-600 mx-2">Accordion 25</span>
+                            <i class="fas fa-arrow-down accordion-icon mx-2"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-indigo-50">
+                                <p>Content for accordion 25. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 26 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-yellow-200 hover:bg-yellow-300 transition-colors duration-300 flex items-center shadow-lg">
+                            <i class="fas fa-chevron-right accordion-icon mr-3"></i>
+                            <span class="font-bold">Accordion 26</span>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-yellow-100 shadow-inner">
+                                <p>Content for accordion 26. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 27 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border-l-4 border-teal-500 hover:bg-teal-100 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 27</span>
+                            <i class="fas fa-chevron-right accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-teal-50">
+                                <p>Content for accordion 27. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 28 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-white border-t-4 border-yellow-500 hover:bg-yellow-100 transition-colors duration-300 flex justify-between items-center">
+                            <span class="font-bold">Accordion 28</span>
+                            <i class="fas fa-circle accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-yellow-50">
+                                <p>Content for accordion 28. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 29 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gray-200 hover:bg-gray-300 transition-colors duration-300 flex justify-between items-center shadow-inner">
+                            <span class="font-bold">Accordion 29</span>
+                            <i class="fas fa-circle accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-gray-100">
+                                <p>Content for accordion 29. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 30 -->
+                    <div class="accordion-item mb-4">
+                        <button class="accordion-header w-full text-left py-3 px-5 bg-gradient-to-r from-purple-400 to-pink-500 hover:from-pink-500 hover:to-purple-400 transition-colors duration-300 flex justify-center items-center">
+                            <i class="fas fa-angle-double-down accordion-icon mx-2"></i>
+                            <span class="font-bold mx-2 text-white">Accordion 30</span>
+                            <i class="fas fa-angle-double-down accordion-icon mx-2"></i>
+                        </button>
+                        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="p-4 bg-purple-50">
+                                <p>Content for accordion 30. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Layout Konten -->
+            </div>
+            <div class="sticky bottom-0 bg-gray-800 text-white">
+                <div class="flex justify-between p-4">
+                    <a href="#" class="hover:text-gray-400">Menu 1</a>
+                    <a href="#" class="hover:text-gray-400">Menu 2</a>
+                    <a href="#" class="hover:text-gray-400">Menu 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+            // Pastikan semua konten accordion tertutup saat halaman dimuat
+            content.style.maxHeight = null;
+            if (icon.classList.contains('fa-minus')) {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            } else if (icon.classList.contains('fa-chevron-up')) {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+
+            header.addEventListener('click', function() {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('.accordion-icon');
+
+                // Tutup semua accordion kecuali yang diklik
+                accordionHeaders.forEach(item => {
+                    const itemContent = item.nextElementSibling;
+                    const itemIcon = item.querySelector('.accordion-icon');
+                    if (item !== header) {
+                        itemContent.style.maxHeight = null;
+                        if (itemIcon) {
+                            if (itemIcon.classList.contains('fa-chevron-up') || itemIcon.classList.contains('fa-chevron-down')) {
+                                itemIcon.classList.remove('fa-chevron-up');
+                                itemIcon.classList.add('fa-chevron-down');
+                            } else if (itemIcon.classList.contains('fa-minus') || itemIcon.classList.contains('fa-plus')) {
+                                itemIcon.classList.remove('fa-minus');
+                                itemIcon.classList.add('fa-plus');
+                            }
+                        }
+                    }
+                });
+
+                // Buka atau tutup accordion yang diklik
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    if (icon) {
+                        if (icon.classList.contains('fa-chevron-up') || icon.classList.contains('fa-chevron-down')) {
+                            icon.classList.remove('fa-chevron-up');
+                            icon.classList.add('fa-chevron-down');
+                        } else if (icon.classList.contains('fa-minus') || icon.classList.contains('fa-plus')) {
+                            icon.classList.remove('fa-minus');
+                            icon.classList.add('fa-plus');
+                        }
+                    }
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    if (icon) {
+                        if (icon.classList.contains('fa-chevron-up') || icon.classList.contains('fa-chevron-down')) {
+                            icon.classList.remove('fa-chevron-down');
+                            icon.classList.add('fa-chevron-up');
+                        } else if (icon.classList.contains('fa-minus') || icon.classList.contains('fa-plus')) {
+                            icon.classList.remove('fa-plus');
+                            icon.classList.add('fa-minus');
+                        }
+                    }
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
