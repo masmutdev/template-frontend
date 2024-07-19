@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS</title>
+    <title>Tailwind CSS Alerts</title>
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/custom.css" rel="stylesheet">
-    <link href="../assets/js/main.js" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body class="bg-black">
@@ -28,6 +27,198 @@
                     <small><i>Diperbarui Pada 19-07-2024 23:36</i></small>
                 </div>
 
+                <!-- Alert Dismissable -->
+                <div id="alert-dismissable" class="alert-dismissable mb-4 p-4 bg-blue-100 border border-blue-400 text-blue-700 relative" role="alert">
+                    <strong class="font-bold">Info!</strong>
+                    <span class="block sm:inline">This is an alert that can be dismissed.</span>
+                    <span class="absolute top-0 bottom-0 right-0 px-4 py-3" id="close-alert">
+                        <i class="fa fa-times text-blue-700 cursor-pointer"></i>
+                    </span>
+                </div>
+
+                <!-- Alert Non-dismissable -->
+                <div class="alert-non-dismissable mb-4 p-4 bg-red-100 border border-red-400 text-red-700" role="alert">
+                    <strong class="font-bold">Warning!</strong>
+                    <span class="block sm:inline">This is an alert that cannot be dismissed.</span>
+                </div>
+                
+                <!-- Alert Hijau -->
+                <div class="alert-non-dismissable mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg" role="alert">
+                    <strong class="font-bold">Success!</strong>
+                    <span class="block sm:inline">This is a green alert to indicate success.</span>
+                </div>
+
+                <!-- Alert Kuning -->
+                <div class="alert-non-dismissable mb-4 p-4 bg-yellow-100 border-4 border-yellow-500 text-yellow-700 rounded" role="alert">
+                    <strong class="font-bold">Warning!</strong>
+                    <span class="block sm:inline">This is a yellow alert to indicate a warning.</span>
+                </div>
+
+                <!-- Alert Merah -->
+                <div class="alert-non-dismissable mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded shadow-lg" role="alert">
+                    <strong class="font-bold">Danger!</strong>
+                    <span class="block sm:inline">This is a red alert to indicate danger.</span>
+                </div>
+
+                <!-- Alert Variasi 1 -->
+                <div class="p-4 mb-4 bg-purple-100 border border-purple-400 text-purple-700 rounded-lg" role="alert">
+                    <strong class="font-bold">Notice:</strong>
+                    <span class="block sm:inline">This is a purple alert.</span>
+                </div>
+
+                <!-- Alert Variasi 2 -->
+                <div class="p-4 mb-4 bg-pink-100 border border-pink-400 text-pink-700 rounded shadow-md" role="alert">
+                    <strong class="font-bold">Alert:</strong>
+                    <span class="block sm:inline">This is a pink alert with a shadow.</span>
+                </div>
+
+                <!-- Alert Variasi 3 -->
+                <div class="p-4 mb-4 bg-gray-800 text-white border border-gray-900 rounded-lg" role="alert">
+                    <strong class="font-bold">Dark Mode:</strong>
+                    <span class="block sm:inline">This is a dark mode alert.</span>
+                </div>
+
+                <!-- Alert Variasi 4 -->
+                <div class="p-4 mb-4 bg-teal-100 border border-teal-400 text-teal-700 rounded-lg shadow-lg" role="alert">
+                    <strong class="font-bold">Info:</strong>
+                    <span class="block sm:inline">This is a teal alert with a large shadow.</span>
+                </div>
+
+                <!-- Alert Variasi 5 -->
+                <div class="p-4 mb-4 bg-yellow-100 border border-yellow-500 text-yellow-700 rounded-lg border-l-4 border-yellow-700" role="alert">
+                    <strong class="font-bold">Warning:</strong>
+                    <span class="block sm:inline">This is a yellow alert with a left border.</span>
+                </div>
+
+                <!-- Alert Variasi 6 -->
+                <div class="p-4 mb-4 bg-blue-200 border border-blue-500 text-blue-800 rounded-lg" role="alert">
+                    <strong class="font-bold">Note:</strong>
+                    <span class="block sm:inline">This is a light blue alert.</span>
+                </div>
+
+                <!-- Alert Variasi 7 -->
+                <div class="p-4 mb-4 bg-indigo-100 border border-indigo-500 text-indigo-800 rounded-full" role="alert">
+                    <strong class="font-bold">Attention:</strong>
+                    <span class="block sm:inline">This is an indigo alert with rounded-full corners.</span>
+                </div>
+
+                <!-- Alert Variasi 8 -->
+                <div class="p-4 mb-4 bg-red-100 border border-red-500 text-red-800 rounded-lg border-t-4 border-red-700" role="alert">
+                    <strong class="font-bold">Error:</strong>
+                    <span class="block sm:inline">This is a red alert with a top border.</span>
+                </div>
+
+                <!-- Alert Variasi 9 -->
+                <div class="p-4 mb-4 bg-green-100 border border-green-500 text-green-800 rounded-lg border-r-4 border-green-700" role="alert">
+                    <strong class="font-bold">Success:</strong>
+                    <span class="block sm:inline">This is a green alert with a right border.</span>
+                </div>
+
+                <!-- Alert Variasi 10 -->
+                <div class="p-4 mb-4 bg-orange-100 border border-orange-500 text-orange-800 rounded-lg shadow-inner" role="alert">
+                    <strong class="font-bold">Caution:</strong>
+                    <span class="block sm:inline">This is an orange alert with an inner shadow.</span>
+                </div>
+
+                <!-- Alert Variasi 11 -->
+                <div class="p-4 mb-4 bg-blue-600 text-white border border-blue-700 rounded-lg" role="alert">
+                    <strong class="font-bold">Notification:</strong>
+                    <span class="block sm:inline">This is a blue alert with white text.</span>
+                </div>
+
+                <!-- Alert Variasi 12 -->
+                <div class="p-4 mb-4 bg-pink-600 text-white border border-pink-700 rounded shadow-xl" role="alert">
+                    <strong class="font-bold">Alert:</strong>
+                    <span class="block sm:inline">This is a pink alert with extra shadow.</span>
+                </div>
+
+                <!-- Alert Variasi 13 -->
+                <div class="p-4 mb-4 bg-gray-900 text-gray-200 border border-gray-800 rounded-lg" role="alert">
+                    <strong class="font-bold">Dark Mode:</strong>
+                    <span class="block sm:inline">This is a dark alert with gray text.</span>
+                </div>
+
+                <!-- Alert Variasi 14 -->
+                <div class="p-4 mb-4 bg-teal-600 text-white border border-teal-700 rounded-lg" role="alert">
+                    <strong class="font-bold">Info:</strong>
+                    <span class="block sm:inline">This is a teal alert with white text.</span>
+                </div>
+
+                <!-- Alert Variasi 15 -->
+                <div class="p-4 mb-4 bg-yellow-600 text-white border border-yellow-700 rounded-lg border-l-4 border-yellow-800" role="alert">
+                    <strong class="font-bold">Warning:</strong>
+                    <span class="block sm:inline">This is a yellow alert with a darker left border.</span>
+                </div>
+
+                <!-- Alert Variasi 16 -->
+                <div class="p-4 mb-4 bg-purple-600 text-white border border-purple-700 rounded-full" role="alert">
+                    <strong class="font-bold">Notice:</strong>
+                    <span class="block sm:inline">This is a purple alert with rounded-full corners.</span>
+                </div>
+
+                <!-- Alert Variasi 17 -->
+                <div class="p-4 mb-4 bg-indigo-600 text-white border border-indigo-700 rounded-lg shadow-2xl" role="alert">
+                    <strong class="font-bold">Attention:</strong>
+                    <span class="block sm:inline">This is an indigo alert with an extra large shadow.</span>
+                </div>
+
+                <!-- Alert Variasi 18 -->
+                <div class="p-4 mb-4 bg-red-600 text-white border border-red-700 rounded-lg border-t-4 border-red-800" role="alert">
+                    <strong class="font-bold">Error:</strong>
+                    <span class="block sm:inline">This is a red alert with a darker top border.</span>
+                </div>
+
+                <!-- Alert Variasi 19 -->
+                <div class="p-4 mb-4 bg-green-600 text-white border border-green-700 rounded-lg border-r-4 border-green-800" role="alert">
+                    <strong class="font-bold">Success:</strong>
+                    <span class="block sm:inline">This is a green alert with a darker right border.</span>
+                </div>
+
+                <!-- Alert Variasi 20 -->
+                <div class="p-4 mb-4 bg-orange-600 text-white border border-orange-700 rounded-lg shadow-md" role="alert">
+                    <strong class="font-bold">Caution:</strong>
+                    <span class="block sm:inline">This is an orange alert with a medium shadow.</span>
+                </div>
+
+                <!-- Alert Variasi 21 -->
+                <div class="p-4 mb-4 bg-blue-700 text-white border border-blue-800 rounded-lg" role="alert">
+                    <strong class="font-bold">Notification:</strong>
+                    <span class="block sm:inline">This is a darker blue alert with white text.</span>
+                </div>
+
+                <!-- Alert Variasi 22 -->
+                <div class="p-4 mb-4 bg-pink-700 text-white border border-pink-800 rounded shadow-lg" role="alert">
+                    <strong class="font-bold">Alert:</strong>
+                    <span class="block sm:inline">This is a darker pink alert with a large shadow.</span>
+                </div>
+
+                <!-- Alert Variasi 23 -->
+                <div class="p-4 mb-4 bg-gray-900 text-gray-300 border border-gray-800 rounded-lg" role="alert">
+                    <strong class="font-bold">Dark Mode:</strong>
+                    <span class="block sm:inline">This is a dark alert with lighter gray text.</span>
+                </div>
+
+                <!-- Alert Variasi 24 -->
+                <div class="p-4 mb-4 bg-teal-700 text-white border border-teal-800 rounded-lg" role="alert">
+                    <strong class="font-bold">Info:</strong>
+                    <span class="block sm:inline">This is a darker teal alert with white text.</span>
+                </div>
+
+                <!-- Alert Variasi 25 -->
+                <div class="p-4 mb-4 bg-yellow-700 text-white border border-yellow-800 rounded-lg border-l-4 border-yellow-900" role="alert">
+                    <strong class="font-bold">Warning:</strong>
+                    <span class="block sm:inline">This is a darker yellow alert with a very dark left border.</span>
+                </div>
+
+                <!-- Modal -->
+                <div id="modalAlert" class="fixed inset-0 flex items-center justify-center modal-alert-overlay transition-opacity">
+                    <div class="p-6 mx-2 max-w-sm mx-auto modal-alert-content text-white rounded-lg shadow-lg transition-transform">
+                        <h2 class="text-xl font-bold mb-4">Alert</h2>
+                        <p class="mb-4">This is a modal alert with a transparent black background and transition effects.</p>
+                        <button id="closeModalAlert" class="px-4 py-2 bg-blue-500 rounded hover:bg-blue-700 focus:outline-none">Close</button>
+                    </div>
+                </div>
+
                 <!-- End Layout Konten -->
             </div>
             <div class="sticky bottom-0 bg-gray-800 text-white">
@@ -40,5 +231,26 @@
         </div>
     </div>
 
+    <script>
+        // Function to hide alert
+        document.getElementById('close-alert').addEventListener('click', function() {
+            document.getElementById('alert-dismissable').style.display = 'none';
+        });
+        // Function to hide modal
+        function closeModalAlert() {
+            const modalAlert = document.getElementById('modalAlert');
+            modalAlert.classList.add('modal-alert-hidden');
+            setTimeout(() => {
+                modalAlert.style.display = 'none';
+            }, 300); // Match the transition duration
+        }
+
+        document.getElementById('closeModalAlert').addEventListener('click', closeModalAlert);
+        document.getElementById('modalAlert').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeModalAlert();
+            }
+        });
+    </script>
 </body>
 </html>
